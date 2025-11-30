@@ -109,3 +109,56 @@ footer { text-align:center; padding:18px; background:#000; color:#888; font-size
 .contact-link i {
   font-size: 1.3rem;
 }
+/* ===== SERVICES (UPDATED) ===== */
+.services-intro {
+  color: var(--subtext-color);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.service-item {
+  background: #121212;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: left;
+  border-left: 3px solid var(--main-color);
+  transition: 0.3s;
+  position: relative;
+}
+
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 170, 255, 0.12);
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 12px;
+}
+
+/* Hire Me Button */
+.hire-btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 12px 32px;
+  background: var(--main-color);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background: #0088cc;
+  transform: translateY(-3px);
+}
