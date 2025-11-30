@@ -1,6 +1,14 @@
 /* ===== Reset ===== */
 * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
-body { font-family:'Poppins',sans-serif; background:#0b0b0b; color:#fff; line-height:1.6; }
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+
+  /* NEW GRADIENT BACKGROUND */
+  background: linear-gradient(135deg, #03121f 0%, #042c47 35%, #005c89 70%, #00aaff 100%);
+  background-attachment: fixed; 
+}
 
 /* ===== Header ===== */
 header { position:fixed; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:14px 32px; background:rgba(0,0,0,0.85); z-index:100; }
@@ -161,4 +169,11 @@ footer { text-align:center; padding:18px; background:#000; color:#888; font-size
 .hire-btn:hover {
   background: #0088cc;
   transform: translateY(-3px);
+}
+.category-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  text-align: left;
 }
