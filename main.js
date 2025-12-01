@@ -2,11 +2,14 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
 
-window.onscroll = () => {{
-  let current = "";}
+window.onscroll = () => {
+  let current = "";
+
   sections.forEach((section) => {
     const sectionTop = section.offsetTop - 80;
-    if (scrollY >= sectionTop) current = section.getAttribute("id");
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
   });
 
   navLinks.forEach((link) => {
@@ -36,4 +39,13 @@ form.addEventListener("submit", async (e) => {
   } else {
     status.textContent = "Oops! There was a problem sending your message.";
   }
+});
+
+// ===== Hamburger Menu =====
+const hamburger = document.getElementById("hamburger");
+const navbar = document.getElementById("navbar");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navbar.classList.toggle("active");
 });
